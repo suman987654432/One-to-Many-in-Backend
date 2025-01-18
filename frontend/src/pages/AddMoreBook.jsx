@@ -19,7 +19,7 @@ const AddMoreBook=()=>{
       const handleSubmit=(e)=>{
         e.preventDefault();
         let api="http://localhost:8000/user/addmorebook";
-       axios.post(api, {id:id, ...input}).then((res)=>{
+       axios.post(api, {id:id, ...input}).then(()=>{
         alert("You are succesfully registered!!!");
        })
     }
